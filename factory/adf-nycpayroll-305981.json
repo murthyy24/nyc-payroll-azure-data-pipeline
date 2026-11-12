@@ -1,0 +1,21 @@
+{
+	"name": "adf-nycpayroll-305981",
+	"properties": {
+		"globalParameters": {
+			"dataflow_param_fiscalyear": {
+				"type": "int",
+				"value": 2020
+			}
+		},
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "westus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e1f8e323-718e-4d96-8e28-d10991135099",
+		"tenantId": "f958e84a-92b8-439f-a62d-4f45996b6d07"
+	}
+}

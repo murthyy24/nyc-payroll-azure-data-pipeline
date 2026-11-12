@@ -1,0 +1,25 @@
+{
+	"name": "DS_ADLS_PayrollSummary",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_NYCPayroll",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "payroll_summary.csv",
+				"folderPath": "dirstaging",
+				"fileSystem": "adlsnycpayroll-moorthys"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
